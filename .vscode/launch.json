@@ -1,0 +1,37 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/RTKLibGNSS",
+            "args": ["-k","${workspaceFolder}/config/LuCoop_Vehicle1.conf"],
+            // "args": ["-k","${workspaceFolder}/config/GVINS_sport.conf"],
+            // "args": ["-k","${workspaceFolder}/config/IPNL2019_D1.conf"],
+            // "args": ["-k","${workspaceFolder}/config/Yihan.conf"],
+            // "args": ["-k","${workspaceFolder}/config/HKCORS2023.conf"],
+            // "args": ["-k","${workspaceFolder}/config/GraphGNSS_TSTStatic.conf"],
+            // "args": ["-k","${workspaceFolder}/config/i2nav20210123_1.conf"],
+            // "args": ["-k","${workspaceFolder}/config/i2navBasePPP.conf"],
+            // "args": ["-k","${workspaceFolder}/config/Base20190609.conf"],
+            // "args": ["-k","${workspaceFolder}/config/opts1.conf"],
+            // "args": ["-k","${workspaceFolder}/config/twtf.conf"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
